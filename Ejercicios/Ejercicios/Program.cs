@@ -290,15 +290,7 @@ namespace Ejercicios
         //    return resultado;
         //}
 
-        //5) Crea una aplicación que nos cuente el número de cifras de un número entero positivo 
-        //(hay que controlarlo) pedido por teclado. Crea un método que realice esta acción,
-        //pasando el número por parámetro, devolverá el número de cifras.
 
-
-        //static void Main(string[] args)//pasar de int a string y .length
-        //{
-
-        //}
 
         //10) Diseña  un  método  pedirMes().  Solicita  un  número  de  mes  y  valida  que  se  trata  de  
         //un número de mes correcto. Devuelve dicho número de mes. 
@@ -317,115 +309,170 @@ namespace Ejercicios
         //Fecha actual: 31/12/2011 
         //Día siguiente: 1/1/2012 
 
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Dime un numero de mes: ");
+        //    int month = Convert.ToInt32(Console.ReadLine());
+        //    month = AskMonth(month);
+
+        //    Console.WriteLine("El numero de mes es: " + month);
+        //    Console.ReadLine();
+
+        //    Console.WriteLine("Dime un año: ");
+        //    int year1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Dime un año: ");
+        //    int year2 = Convert.ToInt32(Console.ReadLine());
+
+        //    int limMax = Math.Max(year1, year2);
+        //    int limMin = Math.Min(year1, year2);
+        //    int num = RandomYear(limMin, limMax);
+
+        //    Console.WriteLine("El año aleatorio es: " + num);
+        //    Console.ReadLine();
+
+        //    Console.WriteLine("Dime un dia del mes: ");
+        //    int day = Convert.ToInt32(Console.ReadLine());
+        //    day = AskDay(num, month, day);
+
+        //    Console.WriteLine("La fecha es: " + day + "/" + month + "/" + num);
+        //    Console.ReadLine();
+        //}
+
+        //public static int AskMonth(int mesIntroducido)
+        //{
+
+        //    while (mesIntroducido < 1 || mesIntroducido > 12)
+        //    {
+        //        Console.WriteLine("Dime un numero de mes: ");
+        //        mesIntroducido = Convert.ToInt32(Console.ReadLine());
+        //    }
+
+        //    return mesIntroducido;
+        //}
+
+        //public static int RandomYear(int limMin, int limMax)
+        //{
+        //    Random rnd = new Random();
+        //    int RandomYear = rnd.Next(limMin, limMax+1);
+        //    return RandomYear;
+        //}
+
+        //public static int AskDay(int num, int month, int day)
+        //{
+        //    bool correcto = false;
+
+
+        //        while (day > 1 || day < 31)
+        //        {
+
+        //            if (DateTime.IsLeapYear(num) && month == 2)
+        //            {
+        //                if (day > 29)
+        //                {
+        //                    Console.WriteLine("Error.Introduce otro dia");
+        //                    day = Convert.ToInt32(Console.ReadLine());
+        //                }
+
+        //            }
+        //            else
+        //            {
+        //                if (month == 2)
+        //                {
+        //                    if (day > 28)
+        //                    {
+        //                        Console.WriteLine("Error.Introduce otro dia");
+        //                        day = Convert.ToInt32(Console.ReadLine());
+        //                    }
+        //                }
+        //            }
+        //            if (month == 11 || month == 4 || month == 6 || month == 9)
+        //            {
+        //                if (day > 30)
+        //                {
+        //                    Console.WriteLine("Error.Introduce otro dia");
+        //                    day = Convert.ToInt32(Console.ReadLine());
+        //                }
+        //            }
+        //            if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+        //            {
+        //                if (day > 31)
+        //                {
+        //                    Console.WriteLine("Error.Introduce otro dia");
+        //                    day = Convert.ToInt32(Console.ReadLine());
+        //                }
+        //            }
+        //        }
+
+        //    return day;
+
+        //Escribe una función que reciba un array y lo muestre en pantalla de modo ascendente.
+        //Después escribe otra función que reciba un array y lo muestre en pantalla de modo descendencte. 
+        //Crea un array en el programa principal y pásalo a cada una de las funciones.
+
+        //static void Main(string[] args)// PREGUNTAR A JM
+        //{   
+        //    int[]numeros = new int[5];//declaro un array de 5 por ej
+
+        //    for(int i=0;i<5;i++)
+        //    {
+        //        Console.WriteLine("Introduce 5 valores del array");
+        //        numeros[i] = Convert.ToInt32(Console.ReadLine());
+        //        numeros()=cuenta;
+        //    }
+
+        //    Console.WriteLine(cuenta);
+        //    Console.ReadLine();
+        //}
+        //public static void numeros(int []arrayIntr)
+        //{
+        //    int cuenta=0;
+        //    for(int i=0;i<5;i++)
+        //    {
+        //        arrayIntr[5] = cuenta;
+        //        cuenta++;
+
+        //    }
+
+
+
+        //5) Crea una aplicación que nos cuente el número de cifras de un número entero positivo 
+        //(hay que controlarlo) pedido por teclado. Crea un método que realice esta acción,
+        //pasando el número por parámetro, devolverá el número de cifras.
+
+
+        static void Main(string[] args)//pasar de int a string y .length
         {
-            Console.WriteLine("Dime un numero de mes: ");
-            int month = Convert.ToInt32(Console.ReadLine());
-            month = AskMonth(month);
-
-            Console.WriteLine("El numero de mes es: " + month);
-            Console.ReadLine();
-
-            Console.WriteLine("Dime un año: ");
-            int year1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Dime un año: ");
-            int year2 = Convert.ToInt32(Console.ReadLine());
-
-            int limMax = Math.Max(year1, year2);
-            int limMin = Math.Min(year1, year2);
-            int num = RandomYear(limMin, limMax);
-
-            Console.WriteLine("El año aleatorio es: " + num);
-            Console.ReadLine();
-
-            Console.WriteLine("Dime un dia del mes: ");
-            int day = Convert.ToInt32(Console.ReadLine());
-            day = AskDay(num, month, day);
-
-            Console.WriteLine("La fecha es: " + day + "/" + month + "/" + num);
-            Console.ReadLine();
-        }
-
-        public static int AskMonth(int mesIntroducido)
-        {
-
-            while (mesIntroducido < 1 || mesIntroducido > 12)
-            {
-                Console.WriteLine("Dime un numero de mes: ");
-                mesIntroducido = Convert.ToInt32(Console.ReadLine());
-            }
-
-            return mesIntroducido;
-        }
-
-        public static int RandomYear(int limMin, int limMax)
-        {
-            Random rnd = new Random();
-            int RandomYear = rnd.Next(limMin, limMax+1);
-            return RandomYear;
-        }
-
-        public static int AskDay(int num, int month, int day)
-        {
-            bool correcto = false;
             
-
-                while (day > 1 || day < 31)
-                {
-
-                    if (DateTime.IsLeapYear(num) && month == 2)
-                    {
-                        if (day > 29)
-                        {
-                            Console.WriteLine("Error.Introduce otro dia");
-                            day = Convert.ToInt32(Console.ReadLine());
-                        }
-
-                    }
-                    else
-                    {
-                        if (month == 2)
-                        {
-                            if (day > 28)
-                            {
-                                Console.WriteLine("Error.Introduce otro dia");
-                                day = Convert.ToInt32(Console.ReadLine());
-                            }
-                        }
-                    }
-                    if (month == 11 || month == 4 || month == 6 || month == 9)
-                    {
-                        if (day > 30)
-                        {
-                            Console.WriteLine("Error.Introduce otro dia");
-                            day = Convert.ToInt32(Console.ReadLine());
-                        }
-                    }
-                    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
-                    {
-                        if (day > 31)
-                        {
-                            Console.WriteLine("Error.Introduce otro dia");
-                            day = Convert.ToInt32(Console.ReadLine());
-                        }
-                    }
-                }
-            
-            return day;
+            Console.WriteLine("Introduce un numero entero positivo");
+            string num =Console.ReadLine();
+            num = Cifras();
         }
-
-
-
-
-
-
-
-
+        public static string Cifras(string numeroIntroducido)
+        {
+           numeroIntroducido.Length;
+        }
+        return numIntroducido;
 
 
     }
 
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
